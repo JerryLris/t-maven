@@ -22,7 +22,7 @@ public class PearlTest {
 	public void aaaTest() {
 		System.out.println("dd");
 	}
-	
+
 	@Test
 	public void testPearOutTest() throws IOException {
 		ExcelUtil excel = new ExcelUtil();
@@ -54,7 +54,7 @@ public class PearlTest {
 		for (Pearl pearl : list) {
 			System.out.println(pearl);
 		}
-		
+
 	}
 	public int getInt() {
 		Random random = new Random();
