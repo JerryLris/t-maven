@@ -2,15 +2,15 @@
 <!DOCTYPE mapper
 PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="test">
+<mapper namespace="com.lris.test">
 
 
 <!-- 添加用户 自增主键返回 -->
 <insert id="insertPeal" parameterType="com.lris.excel.po.Pearl">
 <selectKey keyProperty="id" order="AFTER" resultType="java.lang.Integer">
-	select LAST_INSERT_ID() 
+	select LAST_INSERT_ID()
 </selectKey>
-  insert into pearl(term,F01,F02,F03,F04,F05,F06,F07) 
+  insert into pearl(term,F01,F02,F03,F04,F05,F06,F07)
   values(#{term},#{F01},#{F02},#{F03},#{F04},#{F05},#{F06},#{F07})
 </insert>
 
